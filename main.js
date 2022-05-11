@@ -26,4 +26,5 @@ function findNumber(num) {
   return arrays.indexOf(num);
 }
 console.log(findNumber(2));
-// Hard
+//hard
+window.updateTheBackground = function (className) {};
