@@ -28,12 +28,17 @@
       </style>
     </head>
     <body>
-        <button>
+        <button onclick = "updateTheBackground('bg-red')">
           Turn it red!
         </button>
-        <button>
+        <button onclick = "updateTheBackground('bg-white')">
           Turn it white!
         </button>
-    <script src="main.js"></script>
+    <script src="main.js">
+      //hard remove src main.js to make it work
+window.updateTheBackground = function (className) {
+  document.querySelector("body").classList.add(className);
+};
+    </script>
   </body>
 </html>
